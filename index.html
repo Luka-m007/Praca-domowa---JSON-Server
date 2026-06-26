@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praca domowa - API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-filter">
+        <label for="searchInput">Filtry:</label>
+        <input type="text" id="searchInput" placeholder="Wyszukaj po nazwie...">
+        <input type="radio" id="alive" name="status" value="alive" checked>
+        <label for="alive">Żywy</label>
+        <input type="radio" id="dead" name="status" value="dead">
+        <label for="dead">Martwy</label>
+        <input type="radio" id="unknown" name="status" value="unknown">
+        <label for="unknown">Nieznany</label>
+    </div>
+    <div class="container"></div>
+    <div class="btn-container">
+        <img src="arrow-left-solid.png" alt="" id="prevButton">
+        <img src="arrow-right-solid.png" alt="" id="nextButton">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

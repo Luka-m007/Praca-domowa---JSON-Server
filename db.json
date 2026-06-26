@@ -1,0 +1,144 @@
+{
+	"results": [
+		{
+			"id": 1,
+			"name": "Rick Sanchez",
+			"status": "Alive",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+		},
+		{
+			"id": 2,
+			"name": "Morty Smith",
+			"status": "Alive",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+		},
+		{
+			"id": 3,
+			"name": "Abradolf Lincler",
+			"status": "unknown",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
+		},
+		{
+			"id": 4,
+			"name": "Adjudicator Rick",
+			"status": "Dead",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
+		},
+		{
+			"id": 5,
+			"name": "Alan Rails",
+			"status": "Dead",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/10.jpeg"
+		},
+		{
+			"id": 6,
+			"name": "Alien Googah",
+			"status": "unknown",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/13.jpeg"
+		},
+		{
+			"id": 7,
+			"name": "Alien Morty",
+			"status": "unknown",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/14.jpeg"
+		},
+		{
+			"id": 8,
+			"name": "Amish Cyborg",
+			"status": "Dead",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/16.jpeg"
+		},
+		{
+			"id": 9,
+			"name": "Antenna Rick",
+			"status": "unknown",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
+		},
+		{
+			"id": 10,
+			"name": "Aqua Rick",
+			"status": "unknown",
+			"species": "Humanoid",
+			"image": "https://rickandmortyapi.com/api/character/avatar/22.jpeg"
+		},
+		{
+			"id": 11,
+			"name": "Arcade Alien",
+			"status": "unknown",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/23.jpeg"
+		},
+		{
+			"id": 12,
+			"name": "Armagheadon",
+			"status": "Alive",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/24.jpeg"
+		},
+		{
+			"id": 13,
+			"name": "Armothy",
+			"status": "Dead",
+			"species": "unknown",
+			"image": "https://rickandmortyapi.com/api/character/avatar/25.jpeg"
+		},
+		{
+			"id": 14,
+			"name": "Attila Starwar",
+			"status": "Alive",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/28.jpeg"
+		},
+		{
+			"id": 15,
+			"name": "Baby Poopybutthole",
+			"status": "Alive",
+			"species": "Poopybutthole",
+			"image": "https://rickandmortyapi.com/api/character/avatar/30.jpeg"
+		},
+		{
+			"id": 16,
+			"name": "Bearded Lady",
+			"status": "Dead",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/32.jpeg"
+		},
+		{
+			"id": 17,
+			"name": "Beebo",
+			"status": "Dead",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/33.jpeg"
+		},
+		{
+			"id": 18,
+			"name": "Bepisian",
+			"status": "Alive",
+			"species": "Alien",
+			"image": "https://rickandmortyapi.com/api/character/avatar/35.jpeg"
+		},
+		{
+			"id": 19,
+			"name": "Beth Smith",
+			"status": "Alive",
+			"species": "Human",
+			"image": "https://rickandmortyapi.com/api/character/avatar/39.jpeg"
+		},
+		{
+			"id": 20,
+			"name": "Beth's Mytholog",
+			"status": "Dead",
+			"species": "Mythological Creature",
+			"image": "https://rickandmortyapi.com/api/character/avatar/40.jpeg"
+		}
+	]
+}
