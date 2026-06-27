@@ -21,8 +21,6 @@ async function fetchCharacters(page, name, status) {
 	}
 }
 
-// fetchCharacters(1, 'rick', 'Alive')
-
 function createImgCard(character) {
 	const card = document.createElement('div')
 	card.classList.add('character-card')
@@ -49,12 +47,84 @@ function createImgCard(character) {
 	deleteBtn.textContent = 'Usuń postać'
 
 	card.append(img, name, status, species, deleteBtn)
+
+	deleteBtn.addEventListener('click', () => {
+		deleteCard(character.id)
+	})
 	return card
 }
 
+function addPersonForm() {
+	const personContainer = document.createElement('div')
+	const title = document.createElement('h2')
+	const inputName = document.createElement('input')
+	const selectStatus = document.createElement('select')
+	const inputSpecies = document.createElement('input')
+	const createBtn = document.createElement('button')
+	const options = ['Alive', 'Dead', 'unknown']
+	const optionsName = ['Żywy', 'Martwy', 'Nieznany']
 
+	personContainer.classList.add('person-container')
 
+	title.classList.add('title')
+	title.textContent = 'Stwórz postać'
 
+	inputName.placeholder = 'Nazwa postaci'
+	inputName.value = ''
+	inputName.type = 'text'
+	inputName.classList.add('inputs-form')
+
+	options.forEach((el, index) => {
+		const option = document.createElement('option')
+		option.value = el
+		option.textContent = optionsName[index]
+		selectStatus.append(option)
+	})
+	selectStatus.classList.add('inputs-form')
+
+	inputSpecies.classList.add('inputs-form')
+	inputSpecies.placeholder = 'Rasa'
+	inputSpecies.value = ''
+	inputSpecies.type = 'text'
+
+	createBtn.textContent = 'Stwórz'
+	createBtn.classList.add('btn-form')
+
+	document.body.append(personContainer)
+	personContainer.append(title, inputName, selectStatus, inputSpecies, createBtn)
+
+	createBtn.addEventListener('click', () => {
+		addCard(inputName.value, selectStatus.value, inputSpecies.value)
+	})
+}
+
+addPersonForm()
+
+async function deleteCard(id) {
+	try {
+		await fetch(`http://localhost:3000/results/${id}`, { method: 'DELETE' })
+		loadCharacters()
+	} catch (error) {
+		console.log('Error', error)
+	}
+}
+
+async function addCard(name, status, species, img = 'https://rickandmortyapi.com/api/character/avatar/3.jpeg') {
+	try {
+		const character = { name, status, species, image: img }
+		const response = await fetch('http://localhost:3000/results', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(character),
+		})
+		const newCharacter = await response.json()
+		loadCharacters()
+	} catch (error) {
+		console.log('Error', error)
+	}
+}
 
 function renderCharacters(data) {
 	const charactersContainer = document.querySelector('.container')
